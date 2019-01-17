@@ -1,0 +1,14 @@
+{
+  "name": "RETRACT",
+  "version": "0.1.12",
+  "description": "Do you know what Life is? It is something which was never meant to be.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Shreyansh Nayak",
+  "license": "ROSL",
+  "devDependencies": {
+    "electron": "^3.0.4"
+  }
+}

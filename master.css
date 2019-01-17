@@ -6,12 +6,20 @@ body {
 
 .MainFrame {
   position: fixed;
-  top: 3%;
-  left: 1.5%;
+  top: 0%;
+  left: 0%;
 }
 
 .Logo {
   position: fixed;
-  top: 42.5%;
-  left: 45%;
+  top: calc(50vh - 64px);
+  left: calc(50vw - 66px);
+}
+
+.Left-Nav {
+  width: 32px;
+  height: 32px;
+  background-color: #B388FF;
+  padding: none;
+  margin: 0;
 }
