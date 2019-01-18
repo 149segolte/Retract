@@ -1,3 +1,44 @@
+@font-face {
+  font-family: 'Alegreya';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Alegreya Medium'), local('Alegreya-Medium'), url(Alegreya.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@keyframes startEntrance {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.7, 0.7, 0.7);
+  }
+  25% {
+    opacity: 1;
+    top: calc(50vh - 64px);
+    transform: scale3d(1, 1, 1);
+  }
+  75% {
+    left: calc(((100vw - 60px - 48px)*(0.5)) - 18px);
+    top: -45px;
+    transform: scale3d(0.25, 0.25, 0.25);
+  }
+  100% {
+    left: calc(((100vw - 60px - 48px)*(0.5)) - 38px);
+    top: -45px;
+    transform: scale3d(0.25, 0.25, 0.25);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translate3d(0%, 0, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(27.5%, 0, 0);
+    opacity: 1;
+  }
+}
+
 body {
   background-color: #0e0e0e;
   width: 99%;
@@ -13,13 +54,39 @@ body {
 .Logo {
   position: fixed;
   top: calc(50vh - 64px);
-  left: calc(50vw - 66px);
+  left: calc(((100vw - 60px - 48px)*(0.5)) - 18px);
+  animation: startEntrance 3s;
+  animation-fill-mode: forwards;
 }
 
-.Left-Nav {
-  width: 32px;
-  height: 32px;
-  background-color: #B388FF;
-  padding: none;
-  margin: 0;
+.Tag {
+  color: #fff;
+  font-family: 'alegreya';
+  font-size: 20px;
+  position: fixed;
+  top: 6px;
+  left: calc(((100vw - 60px - 48px)*(0.5)) + 25px);
+  opacity: 0;
+  animation-name: slideIn;
+  animation-duration: 0.75s;
+  animation-delay: 2.25s;
+  animation-fill-mode: forwards;
+}
+
+.Nav-Panel {
+  background-color: #b388ff;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  height: 100vh;
+  width: 48px;
+}
+
+.Pan-View {
+  background-color: #000;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  height: 100vh;
+  width: 60px;
 }
