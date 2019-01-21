@@ -1,3 +1,10 @@
+:root {
+  --primary-color: #311b92;
+  --secondary-color: #b388ff;
+  --dark-color: #0e0e0e;
+  --light-color: #f2f2fd;
+}
+
 @font-face {
   font-family: 'Alegreya';
   font-style: normal;
@@ -107,6 +114,36 @@ body {
   animation-duration: 1s;
   animation-delay: 3s;
   animation-fill-mode: forwards;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  width: 48px;
+  height: 48px;
+  text-decoration: none;
+}
+
+.avatar {
+  height: 72px;
+}
+
+.setting {
+  position: fixed;
+  bottom: 48px;
+}
+
+.exit {
+  position: fixed;
+  bottom: 0px;
 }
 
 .Pan-View {
