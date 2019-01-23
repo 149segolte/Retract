@@ -69,7 +69,7 @@
 }
 
 body {
-  background-color: #0e0e0e;
+  background-color: #f2f2fd;
   width: 99%;
   height: 100%;
 }
@@ -89,7 +89,7 @@ body {
 }
 
 .Tag {
-  color: #fff;
+  color: #0e0e0e;
   font-family: 'alegreya';
   font-size: 20px;
   position: fixed;
@@ -142,12 +142,18 @@ li a {
 }
 
 .exit {
+  background-color: transparent;
   position: fixed;
   bottom: 0px;
+  left: 0px;
+  right: calc(100vw - 48px);
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .Pan-View {
-  background-color: #000;
+  background-color: #fff;
   opacity: 0;
   position: fixed;
   top: 0%;

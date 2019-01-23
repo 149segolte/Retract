@@ -11,11 +11,11 @@ let mainWindow
 function createWindow() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 854,
+    height: 640,
     frame: false,
     show: false,
-    backgroundColor: '#0e0e0e',
+    backgroundColor: '#f2f2fd',
     center: true,
     minWidth: 800,
     minHeight: 600,
